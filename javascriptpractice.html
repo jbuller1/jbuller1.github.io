@@ -1,0 +1,41 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+<style type="text/css">
+	.football{
+		width:100px;
+		height:100px;
+		background-image:url(https://i.etsystatic.com/13386525/r/il/d4a65b/2906536659/il_570xN.2906536659_pa0m.jpg);
+		background-size: contain;
+		background-repeat:no-repeat;
+		display: inline-block;
+	}
+.football:hover{
+	background-color:yellow;
+}
+
+</style>
+
+
+</head>
+<body>
+	<h3>1 Football For All of My Pancakes</h3>
+<script type="text/javascript">
+	
+// var number = 0
+
+function makefootball (){
+	var football = document.createElement("div");
+	document.body.appendChild(football)
+	football.classList.add("football")
+	//number = number +1
+	// score.innerText = number
+}
+
+
+setInterval(makefootball, 500)
+</script>
+</body>
+</html>
