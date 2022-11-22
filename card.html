@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<style type="text/css">
+		#jacob{
+			width:800px;
+			height:600px;
+			border:1px solid black;
+			background-size:cover;
+			background-position:center;
+			font-size:100px;
+		}
+
+
+
+	</style>
+
+
+	<center><div id="jacob"></div></center>
+<script type="text/javascript">
+	
+	var clicks =0
+document.addEventListener("click", function(){
+	clicks=clicks+1
+	console.log(clicks)
+
+	if (clicks%2 == 1){
+		jacob.style.backgroundImage="url(MomDadDance.jpeg)";
+	}
+	
+	if (clicks%2 == 0) {jacob.style.backgroundImage="url(MomDadLacrosse.jpeg)";
+
+	}
+
+	if (clicks == 2) {jacob.innerText="Thank You"}
+})
+
+</script>
+</body>
+</html>
