@@ -37,29 +37,30 @@
 
 //Below is the recipe to make the squares appear on the page//
     
-    function makeSquare (x) {
+    function makeCircle (x) {
 
-            var square = document.createElement('div');
-                        document.body.appendChild(square);
+            var circle = document.createElement('div');
+                        document.body.appendChild(circle);
 
-            square.classList.add("box")
-            square.style.width = "400px";
-            square.style.height = "297px";
-            square.style.display = "inline-block";
-            square.style.margin = "10px";
-            square.style.backgroundRepeat = "no-repeat";
-            square.style.border = "1px";
-            square.style.backgroundColor = "blue";
+            circle.classList.add("box")
+            circle.style.width = "400px";
+            circle.style.height = "297px";
+            circle.style.display = "inline-block";
+            circle.style.margin = "10px";
+            circle.style.backgroundRepeat = "no-repeat";
+            circle.style.border = "1px";
+            circle.style.backgroundColor = "blue";
 
-            square.style.backgroundImage = "url(https://file.kelleybluebookimages.com/kbb/base/house/2008/2008-Acura-MDX-FrontSide_ATMDX081_505x375.jpg?interpolation=high-quality&downsize=303:*)";
+            circle.style.backgroundImage = "url(https://file.kelleybluebookimages.com/kbb/base/house/2008/2008-Acura-MDX-FrontSide_ATMDX081_505x375.jpg?interpolation=high-quality&downsize=303:*)";
+            circle.style.borderRadius="50%";
 
-            square.style.backgroundSize = "contain";
-            square.style.id = "square" + x;};
+            circle.style.backgroundSize = "contain";
+            circle.id = "circle" + x;};
 
 //Below, is the for loop in which where the squares are actually made. This for loop is where the function above is actually called. It is called 14 times, (between the values of 0 and 15) and because the variable i is declared in the for loop and is then being passed to the makeSquare recipe, each time the function runs, i changes in value (+1). Thus, the attributes that involve the i change in value as well (eg. the id attribute changes to be whatever i was last time, plus 1.)//
 
     for (var i = 0; i < 15; i++) 
-    { makeSquare(i);}
+    { makeCircle(i);}
 </script>
 </body>
 </html>
