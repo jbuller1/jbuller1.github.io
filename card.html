@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap" rel="stylesheet">
 	<title></title>
 </head>
 <body>
@@ -12,18 +15,21 @@
 			background-size:cover;
 			background-position:center;
 			font-size:100px;
+			font-family: 'Noto Serif', serif;
 		}
 
 
 
 	</style>
-
+<audio src="CardMusic.mp3" id="song"></audio>
 
 	<center><div id="jacob"></div></center>
 <script type="text/javascript">
 	
 	var clicks =0
 document.addEventListener("click", function(){
+song.play()
+
 	clicks=clicks+1
 	console.log(clicks)
 

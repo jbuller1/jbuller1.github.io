@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+	<script type="text/javascript">
+		
+		 document.addEventListener("click", 
+
+		 function makeCircle (event) {
+
+            var circle = document.createElement('div');
+                        document.body.appendChild(circle);
+
+            circle.classList.add("box")
+            circle.style.width = "100px";
+            circle.style.height = "100px";
+            circle.style.display = "inline-block";
+            circle.style.margin = "10px";
+            circle.style.backgroundRepeat = "no-repeat";
+            circle.style.border = "1px";
+            // circle.style.backgroundColor = "blue";
+            circle.style.position="absolute";
+
+            circle.style.backgroundImage = "url(https://hips.hearstapps.com/hmg-prod/amv-prod-cad-assets/wp-content/uploads/2017/04/cars_3_characters-1.jpg)";
+            circle.style.borderRadius="50%";
+            circle.style.backgroundPosition="center";
+
+            circle.style.backgroundSize = "contain";
+
+            console.log(event);
+
+            circle.style.left=event.clientX-50+"px";
+
+            circle.style.top=event.clientY-50+"px";
+
+
+        });
+
+
+
+	</script>
+
+</body>
+</html>
