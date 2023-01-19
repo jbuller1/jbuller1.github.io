@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style type="text/css">
+		#box{
+			height: 400px;
+			width: 400px;
+			background-color: red;
+		}
+	</style>
+	<title></title>
+</head>
+<body>
+
+	<div id=box>
+		
+	</div>
+
+<script type="text/javascript">
+	document.addEventListener("click", function(){
+
+		var randomNumber = Math.round(Math.random()*10);
+
+	})
+	var breakfast=["Prologue","Parados","Episodes","Stasima","Exodos","Foil", "Dramatic Irony", "In Media Res", "Deus Ex Machina"]
+	
+
+
+box.addEventListener("click", function(){
+var randomNumber = Math.round(Math.random()*10);
+
+box.innerText = breakfast[randomNumber];
+})
+
+</script>
+</body>
+</html>
