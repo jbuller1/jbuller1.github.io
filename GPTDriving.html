@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Move div on key press</title>
+	<style>
+		#box {
+			width: 100px;
+			height: 100px;
+			background-color: red;
+			position: absolute;
+			left: 0;
+			top: 0;
+		}
+	</style>
+</head>
+<body>
+	<div id="box"></div>
+	<script>
+		let box = document.getElementById("box");
+		document.addEventListener("keydown", function(event) {
+			if (event.key === "ArrowRight") {
+				box.style.left = (parseInt(box.style.left) || 0) + 10 + "px";
+			}
+		});
+	</script>
+</body>
+</html>

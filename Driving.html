@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style>
+		#box {
+			width: 100px;
+			height: 100px;
+			background-image:url(AcuraMDX.jpeg );
+			
+			background-size: cover;
+
+			position: absolute;
+			left: 0;
+			top: 0;
+		}
+	</style>
+</head>
+<body>
+	<div id="box"></div>
+	<script>
+		let box = document.getElementById("box");
+		document.addEventListener("keydown", function(event) {
+			if (event.key === "ArrowRight") {
+				box.style.left = (parseInt(box.style.left) || 0) + 10 + "px";
+			}
+		});
+	</script>
+</body>
+</html>
