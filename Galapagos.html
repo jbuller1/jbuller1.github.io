@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style type="text/css">
+		#box{
+			height: 400px;
+			width: 400px;
+			background-color: navy;
+			background-size:cover;
+			background-position:center;
+			
+		}
+	</style>
+	<title></title>
+</head>
+<body>
+	<div id=box> </div>
+
+<script type="text/javascript">
+	var clicks =0
+	document.addEventListener("click", function(){
+		clicks=clicks+1
+		console.log(clicks)
+
+	if (clicks%2 == 1){
+		box.style.backgroundImage="url(1.png)";
+	}
+	
+	if (clicks%2 == 0) {
+		box.style.backgroundImage="url(2.png)";
+
+	}
+
+	if (clicks == 2) {
+		box.innerText="Galapagos"}
+})
+	
+	
+</script>
+</body>
+</html>
