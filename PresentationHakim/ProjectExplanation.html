@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>reveal.js</title>
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/black.css">
+
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section data-background-image="HowDidIMake.jpg"data-background-size="contain">
+					
+					<h3 style="background-color:rgba(0, 0, 0, 0.5); 
+					position:relative; top:-300px;" class="fragment">How Did I Make My Final Project?</h3>
+				</section>
+				<section data-background-image="ArrayCode.jpg"
+				data-background-size="contain">
+					
+				<h3 style="background-color:rgba(0, 0, 90, 0.5); 
+					position:relative; top:-300px;" class="fragment">Essentially, It Works off An Array.</h3>
+				</section>
+				<section
+				data-background-image="click.jpg" data-background-size="contain">There is a event listener for a click, which changes the reason every time you do so.</section>
+				
+				<section data-background-image="thumbdown.jpg"> <h3 style="background-color:rgba(0, 0, 90, 0.5); 
+					position:relative; top:-300px;" class="fragment">However, it would have looked horrible without a nice font.
+					
+				</section>
+				
+				<section data-background-image="FontStyle.jpg"> <h3 style="background-color:rgba(0, 150,0 , 0.5); 
+					position:relative; top:-300px;" class="fragment"> Behind this text shows how you implement google fonts into your project text.
+					
+				</section>
+				<section data-background-image="handsup.jpg">
+					
+					<h3 style="background-color:rgba(0, 0, 0, 0.5); 
+					position:relative; top:-300px;" class="fragment">Any Questions?</h3>
+				</section>
+			</div>
+		</div>
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+			});
+		</script>
+	</body>
+</html>
